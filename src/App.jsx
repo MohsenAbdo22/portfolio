@@ -227,12 +227,14 @@ function App() {
                   <span>Available for On-Site Roles</span>
                 </div>
 
-                <div className="mb-8 flex justify-center lg:justify-start">
-                  <img
-                    src={profileImage}
-                    alt="Profile"
-                    className="h-36 w-36 rounded-full border-4 border-engineer-navy object-cover shadow-xl"
-                  />
+                <div className="mb-10 flex justify-center lg:justify-start">
+                  <div className="max-w-max rounded-[32px] border border-slate-200 bg-white p-4 shadow-[0_28px_60px_-35px_rgba(15,23,42,0.45)] transition-all duration-300 hover:-translate-y-1">
+                    <img
+                      src={profileImage}
+                      alt="Profile"
+                      className="h-52 w-52 rounded-3xl object-cover shadow-2xl"
+                    />
+                  </div>
                 </div>
                 
                 <h1 className="font-display text-4xl font-extrabold tracking-tight text-engineer-navy sm:text-5xl lg:text-6xl mb-4 leading-tight">
