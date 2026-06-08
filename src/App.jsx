@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import profile from "/assets/images/profile.jpg"
 // Certificate database
 const certificateDatabase = {
   cert_3mh: {
@@ -226,15 +226,7 @@ function App() {
                   <span>Available for On-Site Roles</span>
                 </div>
 
-                <div className="mb-10 flex justify-center lg:justify-start">
-                  <div className="relative z-10 max-w-max overflow-hidden rounded-[36px] border border-slate-200 bg-white p-5 shadow-[0_32px_80px_-40px_rgba(15,23,42,0.45)] transition-transform duration-300 hover:-translate-y-1">
-                    <img
-                      src="/assets/images/profile.jpg"
-                      alt="Profile"
-                      className="h-72 w-72 rounded-[28px] object-cover shadow-2xl"
-                    />
-                  </div>
-                </div>
+                
 
                 <div className="mb-8 max-w-md text-center lg:text-left">
                   <p className="text-xs uppercase tracking-[0.35em] text-slate-400">Personal Profile</p>
@@ -272,29 +264,15 @@ function App() {
                   </a>
                 </div>
               </div>
-
-              {/* Graphic CV Preview */}
-              <div className="lg:col-span-5 flex justify-center">
-                <div className="relative w-full max-w-md group">
-                  <div className="absolute -inset-1.5 rounded-2xl bg-gradient-to-r from-engineer-travertine to-engineer-steel opacity-30 blur-lg group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                  <div className="relative overflow-hidden rounded-xl bg-white p-2 shadow-2xl border border-slate-200">
-                    <img 
-                      src="/assets/images/cv_preview.jpg" 
-                      alt="Mohamed Abdelwhab Resume Preview" 
-                      className="w-full h-auto rounded-lg shadow-sm hover:scale-[1.02] transition-transform duration-500 cursor-pointer" 
-                      onClick={openCvModal}
+              <div className="lg:col-span-5 mb-10 flex justify-center lg:justify-end">
+                  <div className="relative z-10 max-w-max overflow-hidden rounded-[36px] border border-slate-200 bg-white p-5 shadow-[0_32px_80px_-40px_rgba(15,23,42,0.45)] transition-transform duration-300 hover:-translate-y-1">
+                    <img
+                      src={profile}
+                      alt="Profile"
+                      className="h-72 w-72 rounded-[28px] object-cover shadow-2xl"
                     />
-                    <div 
-                      className="absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-engineer-navy text-white shadow-lg cursor-pointer hover:bg-engineer-steel transition-colors" 
-                      onClick={openCvModal}
-                      title="Zoom Resume"
-                    >
-                      <i className="fa-solid fa-magnifying-glass-plus"></i>
-                    </div>
                   </div>
                 </div>
-              </div>
-
             </div>
           </div>
         </section>
