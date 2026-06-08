@@ -226,11 +226,12 @@ function App() {
                   <span>Available for On-Site Roles</span>
                 </div>
 
-                
-
-                <div className="mb-8 max-w-md text-center lg:text-left">
-                  <p className="text-xs uppercase tracking-[0.35em] text-slate-400">Personal Profile</p>
-                  <p className="mt-2 text-lg font-semibold text-engineer-navy">Professional engineering portfolio snapshot</p>
+                <div className="mb-8 flex justify-center lg:justify-start">
+                  <img
+                    src="/assets/images/profile.jpg"
+                    alt="Profile"
+                    className="h-36 w-36 rounded-full border-4 border-engineer-navy object-cover shadow-xl"
+                  />
                 </div>
 
                 <h1 className="font-display text-4xl font-extrabold tracking-tight text-engineer-navy sm:text-5xl lg:text-6xl mb-4 leading-tight">
