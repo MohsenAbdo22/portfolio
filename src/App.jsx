@@ -226,14 +226,6 @@ function App() {
                   <span>Available for On-Site Roles</span>
                 </div>
 
-                <div className="mb-8 flex justify-center lg:justify-start">
-                  <img
-                    src="/assets/images/profile.jpg"
-                    alt="Profile"
-                    className="h-36 w-36 rounded-full border-4 border-engineer-navy object-cover shadow-xl"
-                  />
-                </div>
-
                 <h1 className="font-display text-4xl font-extrabold tracking-tight text-engineer-navy sm:text-5xl lg:text-6xl mb-4 leading-tight">
                   Mohamed Abdelwhab
                   <span className="block text-2xl sm:text-3xl lg:text-4xl font-medium text-engineer-travertine mt-2">
